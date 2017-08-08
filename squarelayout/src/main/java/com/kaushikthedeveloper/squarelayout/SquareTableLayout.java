@@ -1,29 +1,16 @@
 package com.kaushikthedeveloper.squarelayout;
 
 import android.content.Context;
-import android.os.Build;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
-import android.widget.LinearLayout;
+import android.widget.TableLayout;
 
-public class SqaureLinearLayout extends LinearLayout{
-
-    public SqaureLinearLayout(Context context) {
+public class SquareTableLayout extends TableLayout {
+    public SquareTableLayout(Context context) {
         super(context);
     }
 
-    public SqaureLinearLayout(Context context, @Nullable AttributeSet attrs) {
+    public SquareTableLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
-    }
-
-    public SqaureLinearLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public SqaureLinearLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-        super(context, attrs, defStyleAttr, defStyleRes);
     }
 
     /**
@@ -32,6 +19,7 @@ public class SqaureLinearLayout extends LinearLayout{
      * @param widthMeasureSpec : original width
      * @param heightMeasureSpec : original height
      */
+    @SuppressWarnings("SuspiciousNameCombination")
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 

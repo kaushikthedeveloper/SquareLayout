@@ -24,6 +24,7 @@ public class SquarePercentRelativeLayout extends PercentRelativeLayout {
      * @param widthMeasureSpec : original width
      * @param heightMeasureSpec : original height
      */
+    @SuppressWarnings("SuspiciousNameCombination")
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 

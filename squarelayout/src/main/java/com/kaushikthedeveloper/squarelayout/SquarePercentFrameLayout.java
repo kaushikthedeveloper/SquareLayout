@@ -1,16 +1,20 @@
 package com.kaushikthedeveloper.squarelayout;
 
 import android.content.Context;
+import android.support.percent.PercentFrameLayout;
 import android.util.AttributeSet;
-import android.widget.TableLayout;
 
-public class SqaureTableLayout extends TableLayout {
-    public SqaureTableLayout(Context context) {
+public class SquarePercentFrameLayout extends PercentFrameLayout {
+    public SquarePercentFrameLayout(Context context) {
         super(context);
     }
 
-    public SqaureTableLayout(Context context, AttributeSet attrs) {
+    public SquarePercentFrameLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
+    }
+
+    public SquarePercentFrameLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
     }
 
     /**
@@ -19,6 +23,7 @@ public class SqaureTableLayout extends TableLayout {
      * @param widthMeasureSpec : original width
      * @param heightMeasureSpec : original height
      */
+    @SuppressWarnings("SuspiciousNameCombination")
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 

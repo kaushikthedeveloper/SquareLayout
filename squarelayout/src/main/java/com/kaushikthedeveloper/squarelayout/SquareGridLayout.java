@@ -6,21 +6,21 @@ import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.widget.GridLayout;
 
-public class SqaureGridLayout extends GridLayout {
-    public SqaureGridLayout(Context context) {
+public class SquareGridLayout extends GridLayout {
+    public SquareGridLayout(Context context) {
         super(context);
     }
 
-    public SqaureGridLayout(Context context, AttributeSet attrs) {
+    public SquareGridLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public SqaureGridLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+    public SquareGridLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public SqaureGridLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public SquareGridLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
     }
 
@@ -30,6 +30,7 @@ public class SqaureGridLayout extends GridLayout {
      * @param widthMeasureSpec : original width
      * @param heightMeasureSpec : original height
      */
+    @SuppressWarnings("SuspiciousNameCombination")
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 

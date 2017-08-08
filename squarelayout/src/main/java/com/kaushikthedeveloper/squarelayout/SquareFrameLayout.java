@@ -34,6 +34,7 @@ public class SquareFrameLayout extends FrameLayout {
      * @param widthMeasureSpec : original width
      * @param heightMeasureSpec : original height
      */
+    @SuppressWarnings("SuspiciousNameCombination")
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 

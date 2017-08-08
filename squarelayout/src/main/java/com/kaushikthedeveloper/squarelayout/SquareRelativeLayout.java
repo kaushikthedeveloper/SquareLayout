@@ -1,20 +1,27 @@
 package com.kaushikthedeveloper.squarelayout;
 
 import android.content.Context;
-import android.support.percent.PercentFrameLayout;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
+import android.widget.RelativeLayout;
 
-public class SqaurePercentFrameLayout extends PercentFrameLayout {
-    public SqaurePercentFrameLayout(Context context) {
+public class SquareRelativeLayout extends RelativeLayout {
+    public SquareRelativeLayout(Context context) {
         super(context);
     }
 
-    public SqaurePercentFrameLayout(Context context, AttributeSet attrs) {
+    public SquareRelativeLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public SqaurePercentFrameLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+    public SquareRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    public SquareRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
     }
 
     /**
@@ -23,6 +30,7 @@ public class SqaurePercentFrameLayout extends PercentFrameLayout {
      * @param widthMeasureSpec : original width
      * @param heightMeasureSpec : original height
      */
+    @SuppressWarnings("SuspiciousNameCombination")
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 
