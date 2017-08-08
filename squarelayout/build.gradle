@@ -3,7 +3,7 @@ apply plugin: 'com.android.library'
 //https://inthecheesefactory.com/blog/how-to-upload-library-to-jcenter-maven-central-as-dependency/en
 //Links to the JFrog Bintray : provide configs for upload
 ext {
-    bintrayRepo = 'SquareLayout'
+    bintrayRepo = 'libraries'
     bintrayName = 'square-layout'
 
     publishedGroupId = 'com.github.kaushikthedeveloper'
@@ -15,7 +15,7 @@ ext {
     siteUrl = 'https://github.com/kaushikthedeveloper/SquareLayout'
     gitUrl = 'https://github.com/kaushikthedeveloper/SquareLayout.git'
 
-    libraryVersion = '0.0.2'
+    libraryVersion = '0.0.1'
 
     developerId = 'kaushikthedeveloper'
     developerName = 'Kaushik NP'
