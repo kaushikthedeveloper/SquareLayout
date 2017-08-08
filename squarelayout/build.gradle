@@ -4,11 +4,11 @@ apply plugin: 'com.android.library'
 //Links to the JFrog Bintray : provide configs for upload
 ext {
     bintrayRepo = 'libraries'
-    bintrayName = 'square-layout'
+    bintrayName = 'squarelayout'
 
     publishedGroupId = 'com.github.kaushikthedeveloper'
     libraryName = 'SquareLayout'
-    artifact = 'square-layout'
+    artifact = 'squarelayout'
 
     libraryDescription = 'Wrapper Layout designed to provide Square dimensioned Views for Android'
 
