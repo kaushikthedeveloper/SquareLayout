@@ -4,6 +4,8 @@ import android.content.Context;
 import android.support.percent.PercentFrameLayout;
 import android.util.AttributeSet;
 
+import static java.lang.Math.abs;
+
 public class SquarePercentFrameLayout extends PercentFrameLayout {
     public SquarePercentFrameLayout(Context context) {
         super(context);
@@ -28,7 +30,7 @@ public class SquarePercentFrameLayout extends PercentFrameLayout {
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 
         // if height < width : call super method with heightSpec for all sides
-        if (heightMeasureSpec < widthMeasureSpec) {
+        if (abs(heightMeasureSpec) < abs(widthMeasureSpec)) {
             super.onMeasure(heightMeasureSpec, heightMeasureSpec);
         }
 

@@ -10,6 +10,8 @@ import android.support.annotation.StyleRes;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
+import static java.lang.Math.abs;
+
 public class SquareFrameLayout extends FrameLayout {
     public SquareFrameLayout(@NonNull Context context) {
         super(context);
@@ -39,7 +41,7 @@ public class SquareFrameLayout extends FrameLayout {
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 
         // if height < width : call super method with heightSpec for all sides
-        if (heightMeasureSpec < widthMeasureSpec) {
+        if (abs(heightMeasureSpec) < abs(widthMeasureSpec)) {
             super.onMeasure(heightMeasureSpec, heightMeasureSpec);
         }
 

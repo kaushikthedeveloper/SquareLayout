@@ -4,6 +4,8 @@ import android.content.Context;
 import android.support.percent.PercentRelativeLayout;
 import android.util.AttributeSet;
 
+import static java.lang.Math.abs;
+
 public class SquarePercentRelativeLayout extends PercentRelativeLayout {
 
     public SquarePercentRelativeLayout(Context context) {
@@ -29,7 +31,7 @@ public class SquarePercentRelativeLayout extends PercentRelativeLayout {
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 
         // if height < width : call super method with heightSpec for all sides
-        if (heightMeasureSpec < widthMeasureSpec) {
+        if (abs(heightMeasureSpec) < abs(widthMeasureSpec)) {
             super.onMeasure(heightMeasureSpec, heightMeasureSpec);
         }
 

@@ -4,6 +4,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TableLayout;
 
+import static java.lang.Math.abs;
+
 public class SquareTableLayout extends TableLayout {
     public SquareTableLayout(Context context) {
         super(context);
@@ -24,7 +26,7 @@ public class SquareTableLayout extends TableLayout {
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 
         // if height < width : call super method with heightSpec for all sides
-        if (heightMeasureSpec < widthMeasureSpec) {
+        if (abs(heightMeasureSpec) < abs(widthMeasureSpec)) {
             super.onMeasure(heightMeasureSpec, heightMeasureSpec);
         }
 

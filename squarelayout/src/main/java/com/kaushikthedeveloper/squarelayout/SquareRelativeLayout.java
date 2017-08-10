@@ -6,6 +6,8 @@ import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 
+import static java.lang.Math.abs;
+
 public class SquareRelativeLayout extends RelativeLayout {
     public SquareRelativeLayout(Context context) {
         super(context);
@@ -35,7 +37,7 @@ public class SquareRelativeLayout extends RelativeLayout {
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 
         // if height < width : call super method with heightSpec for all sides
-        if (heightMeasureSpec < widthMeasureSpec) {
+        if (abs(heightMeasureSpec) < abs(widthMeasureSpec)) {
             super.onMeasure(heightMeasureSpec, heightMeasureSpec);
         }
 

@@ -5,7 +5,10 @@ import android.os.Build;
 import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.widget.LinearLayout;
+
+import static java.lang.Math.abs;
 
 public class SquareLinearLayout extends LinearLayout{
 
@@ -37,14 +40,12 @@ public class SquareLinearLayout extends LinearLayout{
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 
         // if height < width : call super method with heightSpec for all sides
-        if (heightMeasureSpec < widthMeasureSpec) {
+        if (abs(heightMeasureSpec) < abs(widthMeasureSpec))
             super.onMeasure(heightMeasureSpec, heightMeasureSpec);
-        }
 
-        // if width <= height : call super method with widthSpec for all sides
-        else {
+            // if width <= height : call super method with widthSpec for all sides
+        else
             super.onMeasure(widthMeasureSpec, widthMeasureSpec);
-        }
     }
 
 }
