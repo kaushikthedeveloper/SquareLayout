@@ -6,6 +6,8 @@ import android.util.AttributeSet;
 
 import static java.lang.Math.abs;
 
+//Deprecated since Support library 26.0
+@Deprecated
 public class SquarePercentFrameLayout extends PercentFrameLayout {
     public SquarePercentFrameLayout(Context context) {
         super(context);
