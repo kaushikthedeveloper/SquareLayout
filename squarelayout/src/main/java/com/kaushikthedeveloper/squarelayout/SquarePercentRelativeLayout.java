@@ -6,8 +6,6 @@ import android.util.AttributeSet;
 
 import static java.lang.Math.abs;
 
-//Deprecated since Support library 26.0
-@Deprecated
 public class SquarePercentRelativeLayout extends PercentRelativeLayout {
 
     public SquarePercentRelativeLayout(Context context) {
