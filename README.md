@@ -1,8 +1,9 @@
 # SquareLayout
 Provide a wrapper class for creating Square dimensioned ViewGroups of the various layouts used in Android.
 
-<img src="https://github.com/kaushikthedeveloper/SquareLayout/blob/master/art/SquareRelativeLayout%20-%20vertical.png?raw=true">
-<img src="https://github.com/kaushikthedeveloper/SquareLayout/blob/master/art/SquareRelativeLayout%20-%20Horizontal.png?raw=true">
+<img src="https://github.com/kaushikthedeveloper/SquareLayout/blob/master/art/SquareRelativeLayout%20-%20vertical.png?raw=true" width="369" height="637"> 
+<br />
+<img src="https://github.com/kaushikthedeveloper/SquareLayout/blob/master/art/SquareRelativeLayout%20-%20Horizontal.png?raw=true" width="720" height="382">
 
 ## Usage
 
