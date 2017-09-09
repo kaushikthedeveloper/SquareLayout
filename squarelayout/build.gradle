@@ -15,7 +15,7 @@ ext {
     siteUrl = 'https://github.com/kaushikthedeveloper/SquareLayout'
     gitUrl = 'https://github.com/kaushikthedeveloper/SquareLayout.git'
 
-    libraryVersion = '0.0.1'
+    libraryVersion = '0.0.2'
 
     developerId = 'kaushikthedeveloper'
     developerName = 'Kaushik NP'
