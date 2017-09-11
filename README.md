@@ -16,7 +16,7 @@ Add this to your build.gradle:
     }
 
     dependencies {
-        compile 'com.github.kaushikthedeveloper:squarelayout:0.0.2'
+        compile 'com.github.kaushikthedeveloper:squarelayout:0.0.3'
     }
 ```
 

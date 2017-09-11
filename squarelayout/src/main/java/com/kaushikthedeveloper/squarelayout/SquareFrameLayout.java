@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.FrameLayout;
 
+import static java.lang.Math.abs;
+
 public class SquareFrameLayout extends FrameLayout {
 
     public SquareFrameLayout(@NonNull Context context) {
@@ -38,8 +40,22 @@ public class SquareFrameLayout extends FrameLayout {
      */
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        init();
         super.onMeasure(widthMeasureSpec,heightMeasureSpec);
+
+        //provide a square Preview in xml (not possible in certain cases)
+        if(isInEditMode()){
+            // if height < width : call super method with heightSpec for all sides
+            if (abs(heightMeasureSpec) < abs(widthMeasureSpec)) {
+                super.onMeasure(heightMeasureSpec, heightMeasureSpec);
+            }
+
+            // if width <= height : call super method with widthSpec for all sides
+            else {
+                super.onMeasure(widthMeasureSpec, widthMeasureSpec);
+            }
+        }
+
+        init();
     }
 
     /**
