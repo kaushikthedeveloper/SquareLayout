@@ -9,23 +9,23 @@ Provide a wrapper class for creating Square dimensioned ViewGroups of the variou
 
 Add this to your build.gradle:
 ```gradle
-    repositories {
-        maven {
-            url "https://maven.google.com"
-        }
+repositories {
+    maven {
+        url "https://maven.google.com"
     }
+}
 
-    dependencies {
-        compile 'com.github.kaushikthedeveloper:squarelayout:0.0.3'
-    }
+dependencies {
+    compile 'com.github.kaushikthedeveloper:squarelayout:0.0.3'
+}
 ```
 
 Add the different SquareLayoutViews to your layout (Minimalistic Layout shown below) :
 ```xml
-        <com.kaushikthedeveloper.squarelayout.SquareLinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-        />
+<com.kaushikthedeveloper.squarelayout.SquareLinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+/>
 ```
 
 The min version for ```Support Library``` requires version "26.+"
