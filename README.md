@@ -7,14 +7,8 @@ Provide a wrapper class for creating Square dimensioned ViewGroups of the variou
 
 ## Usage
 
-Add this to your build.gradle:
+Add dependencies to your module's `build.gradle` :
 ```gradle
-repositories {
-    maven {
-        url "https://maven.google.com"
-    }
-}
-
 dependencies {
     compile 'com.github.kaushikthedeveloper:squarelayout:0.0.3'
 }
