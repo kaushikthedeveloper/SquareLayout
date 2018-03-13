@@ -1,4 +1,7 @@
 # SquareLayout
+
+[ ![Download](https://api.bintray.com/packages/kaushikthedeveloper/libraries/squarelayout/images/download.svg) ](https://bintray.com/kaushikthedeveloper/libraries/squarelayout/_latestVersion) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Provide a wrapper class for creating Square dimensioned ViewGroups of the various layouts used in Android.
 
 <img src="https://github.com/kaushikthedeveloper/SquareLayout/blob/master/art/SquareRelativeLayout%20-%20vertical.png?raw=true" width="300" height="580"> 
